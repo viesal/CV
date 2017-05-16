@@ -33,8 +33,6 @@ while True:
 
     (cnts, _) = cv2.findContours(edged.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     coins = frame.copy()
-
-
     cv2.drawContours(coins, cnts, -1, (0, 255, 0), 2)
 
     available_frame = frame.copy()
